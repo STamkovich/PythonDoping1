@@ -15,7 +15,7 @@ weight3 = 55
 def bmi_calculator(name, height, weight):
     bmi = weight / (height ** 2)
 
-    print("Индекс массы тела: " + str(bmi))
+    print(f"Индекс массы тела: {round(bmi, 1)}")
 
     if bmi < 25:
         return name + " не имеет лишнего веса"
@@ -23,10 +23,11 @@ def bmi_calculator(name, height, weight):
         return name + " Имеет лишний вес"
 
 
-bmi1 = bmi_calculator(name1, height1, weight1)
-bmi2 = bmi_calculator(name2, height2, weight2)
-bmi3 = bmi_calculator(name3, height3, weight3)
+a = (name1, height1, weight1)
+k = {'name': name1, 'height': height1, 'weight': weight1}
 
-print(bmi1)
-print(bmi2)
-print(bmi3)
+bmi_calculator(name1, height1, weight1)
+bmi_calculator(*a)
+
+bmi_calculator(name=name1, height=height1, weight=weight1)
+bmi_calculator(**k)
