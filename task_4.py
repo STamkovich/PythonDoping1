@@ -26,7 +26,8 @@ def bmi_calculator(name, height, weight):
 bmi1 = bmi_calculator(name1, height1, weight1)
 bmi2 = bmi_calculator(name2, height2, weight2)
 bmi3 = bmi_calculator(name3, height3, weight3)
-print(bmi1 + ',',  bmi2 + ',', bmi3 + '.')
+out_string = ','.join([bmi1, bmi2, bmi3])
+print(f'{out_string}.')
 
 #  Индекс массы тела: 22.1606648199446
 #  Индекс массы тела: 30.071168431955627
