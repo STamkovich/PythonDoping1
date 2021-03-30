@@ -20,7 +20,7 @@ def function_python():  # объявляем функцию
             type(k): k
     }
 
-    for key, value in my_dict.items():  # dict.items() Возвращает пары (ключ, значение) для каждого элемента словаря.
+    for key, value in my_dict.items():  # dict.items() Возвращает пары (ключ, значение) для каждого элемента словаря
         print("Ключь: " + str(key) + " / значение: " + str(value))
 
 
