@@ -23,3 +23,13 @@ for e in new_list:
 print(total)
 print(total1)
 print(total2)
+
+# apple
+# banana
+# grape
+# some other word
+# apple
+# banana
+# grape
+# some other word
+
